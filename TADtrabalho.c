@@ -83,25 +83,3 @@ void imprimirFila(fila *vet) {
         printf("%d ", vet->v[i]);
     }
 }
-
-int main() {
-    fila *vet = initFila(10);
-    for(int i=0; i<11; i++) {
-        inserirNaFila(vet, i);
-    }
-    imprimirFila(vet);
-
-    printf("\n");
-
-    for(int i=0; i<5; i++) {
-        removerDaFila(vet);
-    }
-    imprimirFila(vet);
-
-    printf("\n");
-
-    for(int i=0; i<11; i++) {
-        inserirNaFila(vet, i);
-    }
-    imprimirFila(vet);
-}
